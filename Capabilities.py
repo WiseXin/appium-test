@@ -8,7 +8,8 @@ desired_caps = {
     'app': r'E:\BaiduNetdiskDownload\kaoyan3.1.0.apk',
     'appPackage': 'com.tal.kaoyan',
     'appActivity': '.ui.activity.SplashActivity',
-    
+    'unicodeKeyboard': True,
+    'resetKeyboard': True,
     # 'appPackage': ' com.guokr.mentor',
     # 'appActivity': '.ui.activity.MainActivity',
     'noReset': True
