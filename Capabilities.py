@@ -11,7 +11,7 @@ desired_caps = {
 
     # 'appPackage': ' com.guokr.mentor',
     # 'appActivity': '.ui.activity.MainActivity',
-    # 'noReset': True
+    'noReset': True
 }
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 driver.implicitly_wait(5)
@@ -25,7 +25,7 @@ def check_canlebtn():
         print('canlebtn键不存在')
     else:
         canclebtn.click()
-        print()
+
 
 def check_skipbtn():
     print('检查skipbtn键')
