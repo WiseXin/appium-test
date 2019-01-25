@@ -25,7 +25,7 @@ def check_canlebtn():
         print('canlebtn键不存在')
     else:
         canclebtn.click()
-
+        print()
 
 def check_skipbtn():
     print('检查skipbtn键')
