@@ -8,6 +8,7 @@ desired_caps = {
     'app': r'E:\BaiduNetdiskDownload\kaoyan3.1.0.apk',
     'appPackage': 'com.tal.kaoyan',
     'appActivity': '.ui.activity.SplashActivity',
+    'automationName': 'uiautomator2',
     # 'unicodeKeyboard': True,
     # 'resetKeyboard': True,
     # 'appPackage': ' com.guokr.mentor',
@@ -19,11 +20,11 @@ driver.implicitly_wait(5)
 
 
 def check_canlebtn():
-    print('检查canlebtn键')
+    print('检查cancelbtn键')
     try:
-        canclebtn = driver.find_element_by_id('button2')
+        canclebtn = driver.find_element_by_id('android:id/button2')
     except NoSuchElementException:
-        print('canlebtn键不存在')
+        print('cancelbtn取消键不存在')
     else:
         canclebtn.click()
 
@@ -33,10 +34,10 @@ def check_skipbtn():
     try:
         skipbtn = driver.find_element_by_id('tv_skip')
     except NoSuchElementException:
-        print('取消键不存在')
+        print('跳过键不存在')
     else:
         skipbtn.click()
 
 
 check_canlebtn()
-check_skipbtn()
+# check_skipbtn()

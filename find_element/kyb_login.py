@@ -1,4 +1,4 @@
-from appium_test.Capabilities import driver, NoSuchElementException
+from appium_test.find_element.Capabilities import driver, NoSuchElementException
 
 
 def login():

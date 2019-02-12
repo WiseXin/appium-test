@@ -1,7 +1,8 @@
 import random
 
-from appium_test.Capabilities import driver
+from appium_test.find_element.Capabilities import driver
 
+# 是哟版list定位，选择数组下标
 # 进入注册界面
 driver.find_element_by_id('login_register_text').click()
 # 设置头像

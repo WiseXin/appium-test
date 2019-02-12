@@ -1,5 +1,6 @@
-from appium_test.Capabilities import driver
+from appium_test.find_element.Capabilities import driver
 
+# UiAutoumator定位方式
 # username:%s name74269
 # password:%s pwd59011
 name_text = 'new UiSelector().text("请输入用户名")'
